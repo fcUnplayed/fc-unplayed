@@ -1,1 +1,0 @@
-console.log('FC Unplayed website loaded');
