@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ФК Unplayed - официальный сайт</title>
+    <meta name="description" content="Официальный сайт футбольного клуба Unplayed. Новости, матчи, состав, магазин.">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- ===== HEADER ===== -->
+        <header class="header" id="header">
+            <div class="header-inner">
+                <a href="/" class="logo">
+                    <img src="/images/logo.svg" alt="Unplayed" width="160" height="50">
+                </a>
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#" class="active">медиа</a></li>
+                        <li><a href="#">матчи</a></li>
+                        <li><a href="#">клуб</a></li>
+                        <li><a href="#">команды</a></li>
+                        <li><a href="#">магазин</a></li>
+                        <li class="dropdown">
+                            <a href="#">билеты <span class="arrow">▼</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">билеты</a></li>
+                                <li><a href="#">абонементы</a></li>
+                                <li><a href="#">экскурсионные туры</a></li>
+                                <li><a href="#">премиум места</a></li>
+                                <li><a href="#">информация</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="btn-highlight">Абонементы 26/27</a></li>
+                        <li><a href="#">академия</a></li>
+                        <li class="dropdown">
+                            <a href="#">больше <span class="arrow">▼</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Экскурсионные туры</a></li>
+                                <li><a href="#">Бизнес-партнерство</a></li>
+                                <li><a href="#">Стадион</a></li>
+                                <li><a href="#">Комитет ветеранов</a></li>
+                                <li><a href="#">Программа лояльности</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <div class="social-icons">
+                        <a href="#" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 12L10.5 9V15L15 12Z"/><path d="M2.25 12C2.25 14.7895 2.5382 16.4263 2.75729 17.2675C2.81585 17.4972 2.92832 17.7097 3.08537 17.8873C3.24241 18.0649 3.43952 18.2026 3.66037 18.2888C6.79883 19.4949 12 19.4618 12 19.4618C12 19.4618 17.2011 19.4949 20.3396 18.2888C20.5604 18.2026 20.7576 18.0649 20.9146 17.8873C21.0717 17.7097 21.1841 17.4972 21.2427 17.2675C21.4618 16.4263 21.75 14.7896 21.75 12C21.75 9.21039 21.4618 7.57368 21.2427 6.73248C21.1841 6.50273 21.0717 6.29025 20.9146 6.11264C20.7576 5.93502 20.5605 5.79738 20.3396 5.71113C17.2012 4.50506 12 4.53818 12 4.53818C12 4.53818 6.79888 4.50506 3.66039 5.71112C3.43955 5.79737 3.24244 5.93501 3.08539 6.11262C2.92834 6.29024 2.81588 6.50272 2.75731 6.73246C2.53821 7.57366 2.25 9.21039 2.25 12Z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Telegram">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6.87503 10.537L13.8998 16.7188C13.9811 16.7903 14.0796 16.8395 14.1856 16.8615C14.2916 16.8836 14.4015 16.8777 14.5045 16.8445C14.6076 16.8112 14.7002 16.7518 14.7734 16.672C14.8466 16.5922 14.8977 16.4948 14.9219 16.3892L17.8605 3.56637C17.8859 3.4555 17.8806 3.3398 17.8451 3.23174C17.8096 3.12368 17.7453 3.02735 17.6591 2.95314C17.5729 2.87892 17.4681 2.82963 17.356 2.81059C17.2438 2.79154 17.1286 2.80345 17.0228 2.84504L2.60425 8.50945C2.47859 8.55882 2.37229 8.64755 2.30126 8.76236C2.23023 8.87718 2.1983 9.01191 2.21022 9.14639C2.22215 9.28087 2.27731 9.40788 2.36744 9.5084C2.45756 9.60892 2.57782 9.67755 2.71021 9.70403L6.87503 10.537Z"/><path d="M6.875 10.5374L17.5088 2.85742"/><path d="M10.3834 13.6245L7.94194 16.0659C7.85453 16.1533 7.74317 16.2128 7.62193 16.2369C7.50069 16.2611 7.37503 16.2487 7.26082 16.2014C7.14662 16.1541 7.04901 16.074 6.98033 15.9712C6.91166 15.8684 6.875 15.7476 6.875 15.624V10.5371"/></svg>
+                        </a>
+                        <a href="#" aria-label="VK">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12.145 19.5C15.617 19.5 14.379 17.302 14.647 16.67C14.643 16.198 14.639 15.744 14.655 15.468C14.875 15.53 15.394 15.793 16.466 16.835C18.121 18.505 18.544 19.5 19.881 19.5H22.342C23.122 19.5 23.528 19.177 23.731 18.906C23.927 18.644 24.119 18.184 23.909 17.468C23.36 15.744 20.158 12.767 19.959 12.453C19.989 12.395 20.037 12.318 20.062 12.278H20.06C20.692 11.443 23.104 7.829 23.459 6.383C23.653 5.715 23.477 5.287 23.295 5.045C23.021 4.683 22.585 4.5 21.996 4.5H19.535C18.711 4.5 18.086 4.915 17.77 5.672C17.241 7.017 15.755 9.783 14.641 10.762C14.607 9.375 14.63 8.316 14.648 7.529C14.684 5.994 14.8 4.5 13.207 4.5H9.339C8.341 4.5 7.386 5.59 8.42 6.884C9.324 8.018 8.745 8.65 8.94 11.796C8.18 10.981 6.828 8.78 5.872 5.967C5.604 5.206 5.198 4.501 4.055 4.501H1.594C0.596 4.501 0 5.045 0 5.956C0 8.002 4.529 19.5 12.145 19.5Z"/><path d="M4.055 6.001C4.272 6.001 4.294 6.001 4.455 6.458C5.434 9.341 7.63 13.607 9.234 13.607C10.439 13.607 10.439 12.372 10.439 11.907L10.438 8.205C10.372 6.98 9.926 6.37 9.633 6L13.141 6.004C13.143 6.021 13.121 10.099 13.151 11.087C13.151 12.49 14.265 13.294 16.004 11.534C17.839 9.463 19.108 6.367 19.159 6.241C19.234 6.061 19.299 6 19.535 6H21.996H22.006C22.005 6.003 22.005 6.006 22.004 6.009C21.779 7.059 19.558 10.405 18.815 11.444C18.803 11.46 18.792 11.477 18.781 11.494C18.454 12.028 18.188 12.618 18.826 13.448H18.827C18.885 13.518 19.036 13.682 19.256 13.91C19.94 14.616 22.286 17.03 22.494 17.99C22.356 18.012 22.206 17.996 19.881 18.001C19.386 18.001 18.999 17.261 17.522 15.771C16.194 14.479 15.332 13.951 14.547 13.951C13.023 13.951 13.134 15.188 13.148 16.684C13.153 18.306 13.143 17.793 13.154 17.895C13.065 17.93 12.81 18 12.145 18C5.8 18 1.668 7.929 1.509 6.004C1.564 5.999 2.321 6.002 4.055 6.001Z"/></svg>
+                        </a>
+                    </div>
+                    <button class="icon-btn" aria-label="Поиск">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z"/><path d="M16.4431 16.4438L20.9994 21.0002"/></svg>
+                    </button>
+                    <button class="icon-btn" aria-label="Сменить тему">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"/><path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6V18Z" fill="currentColor"/></svg>
+                    </button>
+                    <button class="lang-btn">EN</button>
+                    <button class="login-btn">Войти</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- ===== MOBILE HEADER ===== -->
+        <div class="mobile-header">
+            <div class="mobile-header-inner">
+                <button class="burger-btn" id="burgerBtn">☰</button>
+                <a href="/" class="mobile-logo">
+                    <img src="/images/logo.svg" alt="Unplayed" height="35">
+                </a>
+                <div class="mobile-actions">
+                    <button class="icon-btn">❤️</button>
+                    <button class="icon-btn">🛒</button>
+                    <button class="icon-btn">👤</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== MOBILE MENU ===== -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-inner">
+                <div class="mobile-search">
+                    <input type="text" placeholder="Поиск по сайту...">
+                    <button>✕</button>
+                </div>
+                <nav>
+                    <a href="#">медиа</a>
+                    <a href="#">матчи</a>
+                    <a href="#">клуб</a>
+                    <a href="#">команды</a>
+                    <a href="#">магазин</a>
+                    <a href="#">билеты</a>
+                    <a href="#" class="highlight">Абонементы 26/27</a>
+                    <a href="#">больше</a>
+                </nav>
+                <div class="mobile-footer">
+                    <button class="lang-btn">EN</button>
+                    <button class="theme-btn">Светлая тема</button>
+                    <button class="login-btn">Войти</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== MAIN BANNER ===== -->
+        <section class="main-banner">
+            <div class="container">
+                <div class="banner-slide">
+                    <div class="banner-image-placeholder">
+                        <span>#UNPLAYED</span>
+                    </div>
+                    <div class="banner-content">
+                        <h1>Добро пожаловать в <span>Unplayed</span></h1>
+                        <p>Новый футбольный клуб с амбициями. Мы создаем историю с нуля. Присоединяйтесь!</p>
+                        <div class="banner-buttons">
+                            <a href="#" class="btn-red">Купить билеты</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== MATCH CARDS ===== -->
+        <section class="matches-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Ближайшие матчи</h2>
+                    <div class="section-controls">
+                        <button class="arrow-btn prev">◀</button>
+                        <button class="arrow-btn next">▶</button>
+                    </div>
+                </div>
+
+                <div class="match-cards">
+                    <!-- Match 1 -->
+                    <div class="match-card past">
+                        <div class="match-header">
+                            <span class="match-tournament">Суперкубок</span>
+                            <time>18 июля, 16:30</time>
+                        </div>
+                        <div class="match-teams">
+                            <div class="team home">
+                                <div class="team-logo">⚪</div>
+                                <span class="team-name">Авангард</span>
+                            </div>
+                            <div class="match-score">
+                                <span class="score">1 : 1</span>
+                                <span class="penalty">(4:2 пен.)</span>
+                            </div>
+                            <div class="team away">
+                                <div class="team-logo">🔴</div>
+                                <span class="team-name">Unplayed</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-stadium">Главная Арена</span>
+                            <a href="#" class="btn-outline">Репортаж</a>
+                        </div>
+                    </div>
+
+                    <!-- Match 2 -->
+                    <div class="match-card future">
+                        <div class="match-header">
+                            <span class="match-tournament">Премьер-Лига</span>
+                            <time>25 июля, 17:45</time>
+                        </div>
+                        <div class="match-teams">
+                            <div class="team home">
+                                <div class="team-logo">🔴</div>
+                                <span class="team-name">Unplayed</span>
+                            </div>
+                            <div class="match-score">
+                                <span class="score">vs</span>
+                                <div class="countdown">01 : 03 : 02</div>
+                            </div>
+                            <div class="team away">
+                                <div class="team-logo">🟡</div>
+                                <span class="team-name">Динамо</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-stadium">Unplayed Арена</span>
+                            <div class="match-actions">
+                                <a href="#" class="btn-red">Купить билет</a>
+                                <div class="odds">
+                                    <span>П1 1.31</span>
+                                    <span>Х 5.80</span>
+                                    <span>П2 8.80</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Match 3 -->
+                    <div class="match-card future">
+                        <div class="match-header">
+                            <span class="match-tournament">Премьер-Лига</span>
+                            <time>2 августа, 17:30</time>
+                        </div>
+                        <div class="match-teams">
+                            <div class="team home">
+                                <div class="team-logo">🟢</div>
+                                <span class="team-name">Сокол</span>
+                            </div>
+                            <div class="match-score">
+                                <span class="score">vs</span>
+                                <div class="countdown">09 : 02 : 47</div>
+                            </div>
+                            <div class="team away">
+                                <div class="team-logo">🔴</div>
+                                <span class="team-name">Unplayed</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-stadium">Сокол Арена</span>
+                            <a href="#" class="btn-outline">Добавить в календарь</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== NEWS ===== -->
+        <section class="news-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Новости</h2>
+                    <select class="filter-select">
+                        <option>Все новости</option>
+                        <option>Команда</option>
+                        <option>Академия</option>
+                    </select>
+                </div>
+                <div class="news-empty">
+                    <div class="empty-icon">📰</div>
+                    <h3>Новостей нет</h3>
+                    <p>Следите за обновлениями, скоро появятся первые новости!</p>
+                </div>
+                <a href="#" class="btn-outline center">Все новости</a>
+            </div>
+        </section>
+
+        <!-- ===== SUBSCRIBE ===== -->
+        <section class="subscribe-section">
+            <div class="container">
+                <div class="subscribe-card">
+                    <h3>Хотите первым узнавать новости про "Unplayed"?</h3>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Введите ваш e-mail" required>
+                        <button type="submit" class="btn-red">Подписаться</button>
+                    </form>
+                    <p class="subscribe-note">Вводя свой e-mail и нажимая кнопку "Подписаться", я даю согласие на получение рекламно-информационных рассылок</p>
+                    <div class="subscribe-image">
+                        <div class="subscribe-image-placeholder">📱</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== STANDINGS ===== -->
+        <section class="standings-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Турнирная таблица</h2>
+                    <a href="#" class="link-more">полная таблица</a>
+                </div>
+                <div class="standings-placeholder">
+                    <div class="standings-info">
+                        <h4>Премьер-Лига</h4>
+                        <div class="standings-table">
+                            <div class="table-row header">
+                                <span>#</span>
+                                <span>Команда</span>
+                                <span>И</span>
+                                <span>В</span>
+                                <span>Н</span>
+                                <span>П</span>
+                                <span>О</span>
+                            </div>
+                            <div class="table-row">
+                                <span>1</span>
+                                <span>🔴 Unplayed</span>
+                                <span>3</span>
+                                <span>2</span>
+                                <span>1</span>
+                                <span>0</span>
+                                <span>7</span>
+                            </div>
+                            <div class="table-row">
+                                <span>2</span>
+                                <span>⚪ Авангард</span>
+                                <span>3</span>
+                                <span>2</span>
+                                <span>1</span>
+                                <span>0</span>
+                                <span>7</span>
+                            </div>
+                            <div class="table-row">
+                                <span>3</span>
+                                <span>🟡 Динамо</span>
+                                <span>3</span>
+                                <span>1</span>
+                                <span>1</span>
+                                <span>1</span>
+                                <span>4</span>
+                            </div>
+                            <div class="table-row">
+                                <span>4</span>
+                                <span>🟢 Сокол</span>
+                                <span>3</span>
+                                <span>1</span>
+                                <span>0</span>
+                                <span>2</span>
+                                <span>3</span>
+                            </div>
+                            <div class="table-row">
+                                <span>5</span>
+                                <span>🔵 Звезда</span>
+                                <span>3</span>
+                                <span>0</span>
+                                <span>1</span>
+                                <span>2</span>
+                                <span>1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="standings-banner">
+                        <div class="standings-banner-placeholder">📢 Реклама</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== VIDEO ===== -->
+        <section class="video-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Видео</h2>
+                    <div class="section-controls">
+                        <button class="arrow-btn prev">◀</button>
+                        <button class="arrow-btn next">▶</button>
+                    </div>
+                    <a href="#" class="link-more">Все видео</a>
+                </div>
+                <div class="video-grid">
+                    <div class="video-card">
+                        <div class="video-thumb">
+                            <div class="video-thumb-placeholder">🎬</div>
+                            <span class="video-duration">▶ 3:45</span>
+                        </div>
+                        <div class="video-info">
+                            <h4>ПЕРВАЯ ТРЕНИРОВКА КОМАНДЫ!</h4>
+                            <span class="video-meta">Видео • 24 июля 17:17</span>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumb">
+                            <div class="video-thumb-placeholder">🎬</div>
+                            <span class="video-duration">▶ 5:20</span>
+                        </div>
+                        <div class="video-info">
+                            <h4>ИНТЕРВЬЮ С КАПИТАНОМ</h4>
+                            <span class="video-meta">Видео • 21 июля 16:16</span>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumb">
+                            <div class="video-thumb-placeholder">🎬</div>
+                            <span class="video-duration">▶ 2:15</span>
+                        </div>
+                        <div class="video-info">
+                            <h4>ОТКРЫТАЯ ТРЕНИРОВКА</h4>
+                            <span class="video-meta">Видео • 16 июля 21:52</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SHOP ===== -->
+        <section class="shop-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Магазин</h2>
+                    <div class="section-controls">
+                        <button class="arrow-btn prev">◀</button>
+                        <button class="arrow-btn next">▶</button>
+                    </div>
+                    <a href="#" class="link-more">перейти в магазин</a>
+                </div>
+                <div class="shop-grid">
+                    <div class="shop-item">
+                        <div class="shop-image">
+                            <div class="shop-image-placeholder">👕</div>
+                            <button class="favorite-btn">♡</button>
+                        </div>
+                        <div class="shop-info">
+                            <h4>Домашняя форма 26/27</h4>
+                            <div class="shop-price">
+                                <span>4 999 ₽</span>
+                                <span class="installment">Долями по 1 250 ₽</span>
+                            </div>
+                            <div class="shop-sizes">
+                                <span class="size active">XS</span>
+                                <span class="size">S</span>
+                                <span class="size">M</span>
+                                <span class="size">L</span>
+                                <span class="size">XL</span>
+                            </div>
+                            <button class="btn-red add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <div class="shop-image">
+                            <div class="shop-image-placeholder">👕</div>
+                            <button class="favorite-btn">♡</button>
+                        </div>
+                        <div class="shop-info">
+                            <h4>Гостевая форма 26/27</h4>
+                            <div class="shop-price">
+                                <span>4 999 ₽</span>
+                                <span class="installment">Долями по 1 250 ₽</span>
+                            </div>
+                            <div class="shop-sizes">
+                                <span class="size active">XS</span>
+                                <span class="size">S</span>
+                                <span class="size">M</span>
+                                <span class="size">L</span>
+                                <span class="size">XL</span>
+                            </div>
+                            <button class="btn-red add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <div class="shop-image">
+                            <div class="shop-image-placeholder">🧤</div>
+                            <button class="favorite-btn">♡</button>
+                        </div>
+                        <div class="shop-info">
+                            <h4>Вратарская форма</h4>
+                            <div class="shop-price">
+                                <span>3 999 ₽</span>
+                                <span class="installment">Долями по 1 000 ₽</span>
+                            </div>
+                            <div class="shop-sizes">
+                                <span class="size active">XS</span>
+                                <span class="size">S</span>
+                                <span class="size">M</span>
+                                <span class="size">L</span>
+                                <span class="size">XL</span>
+                            </div>
+                            <button class="btn-red add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <div class="shop-image">
+                            <div class="shop-image-placeholder">🧣</div>
+                            <button class="favorite-btn">♡</button>
+                        </div>
+                        <div class="shop-info">
+                            <h4>Шарф Unplayed</h4>
+                            <div class="shop-price">
+                                <span>1 299 ₽</span>
+                            </div>
+                            <button class="btn-red add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TROPHIES ===== -->
+        <section class="trophies-section">
+            <div class="container">
+                <h2 class="section-title">Трофеи клуба</h2>
+                <div class="trophies-grid">
+                    <div class="trophy-item">
+                        <div class="trophy-icon">🏆</div>
+                        <div class="trophy-count">0</div>
+                        <div class="trophy-name">Чемпионат</div>
+                    </div>
+                    <div class="trophy-item">
+                        <div class="trophy-icon">🏆</div>
+                        <div class="trophy-count">0</div>
+                        <div class="trophy-name">Кубок</div>
+                    </div>
+                    <div class="trophy-item">
+                        <div class="trophy-icon">🏆</div>
+                        <div class="trophy-count">0</div>
+                        <div class="trophy-name">Суперкубок</div>
+                    </div>
+                    <div class="trophy-item">
+                        <div class="trophy-icon">⭐</div>
+                        <div class="trophy-name">Первая победа скоро!</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== APP BANNER ===== -->
+        <section class="app-banner">
+            <div class="container">
+                <div class="app-content">
+                    <div class="app-text">
+                        <h2>Новое официальное мобильное приложение</h2>
+                        <p>Скачивайте единственное официальное мобильное приложение клуба, чтобы всегда быть в курсе новостей первой команды, молодежки и Академии, а также иметь самый удобный доступ к магазину и покупке билетов на матчи!</p>
+                        <div class="app-stores">
+                            <a href="#" class="store-btn">Google Play</a>
+                            <a href="#" class="store-btn">App Store</a>
+                            <a href="#" class="store-btn">RuStore</a>
+                            <a href="#" class="store-btn">AppGallery</a>
+                        </div>
+                    </div>
+                    <div class="app-image">
+                        <div class="app-image-placeholder">📱</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FOOTER ===== -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-main">
+                    <div class="footer-social">
+                        <a href="#">YouTube</a>
+                        <a href="#">Telegram</a>
+                        <a href="#">VK</a>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-col">
+                            <h4>Академия</h4>
+                            <a href="#">Об академии</a>
+                            <a href="#">Сотрудники</a>
+                            <a href="#">Команды</a>
+                            <a href="#">Медиа</a>
+                            <a href="#">Инфраструктура</a>
+                            <a href="#">Как попасть</a>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Медиа</h4>
+                            <a href="#">Новости</a>
+                            <a href="#">Галерея</a>
+                            <a href="#">Видео</a>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Команды</h4>
+                            <a href="#">Unplayed</a>
+                            <a href="#">Unplayed-2</a>
+                            <a href="#">Unplayed (мол)</a>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Клуб</h4>
+                            <a href="#">История</a>
+                            <a href="#">Руководство</a>
+                            <a href="#">Партнеры</a>
+                            <a href="#">Контакты</a>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Билеты</h4>
+                            <a href="#">Билеты</a>
+                            <a href="#">Абонементы</a>
+                            <a href="#">Премиум места</a>
+                            <a href="#">Информация</a>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Магазин</h4>
+                            <a href="#">Сезон 26/27</a>
+                            <a href="#">Новинки</a>
+                            <a href="#">Форма</a>
+                            <a href="#">Сувениры</a>
+                            <a href="#">Распродажа</a>
+                        </div>
+                    </div>
+                    <div class="footer-payment">
+                        <span class="payment-icon">💳 Visa</span>
+                        <span class="payment-icon">💳 Mastercard</span>
+                        <span class="payment-icon">💳 Mir</span>
+                    </div>
+                    <div class="footer-apps">
+                        <h4>Наши приложения</h4>
+                        <div class="app-links">
+                            <a href="#" class="store-btn">Google Play</a>
+                            <a href="#" class="store-btn">App Store</a>
+                            <a href="#" class="store-btn">RuStore</a>
+                            <a href="#" class="store-btn">AppGallery</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>© 2026 ФК Unplayed. Все права защищены. 18+</p>
+                    <a href="#" class="dex-link">Создание и поддержка: DEX</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- ===== BACK TO TOP ===== -->
+        <button class="back-to-top" id="backToTop">▲</button>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
